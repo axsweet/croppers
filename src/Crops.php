@@ -196,7 +196,9 @@ function croppers(imgSrc,cropperFileE)
         btn1: function(){
             var cas = cropper.getCroppedCanvas({
                 width: w,
-                height: h
+                height: h,
+                     center: true,
+            fillColor: '#FFFFFF'1
             });
             //剪裁数据转换base64
             var base64url = cas.toDataURL(getMIME(imgSrc));
@@ -225,8 +227,8 @@ function croppers(imgSrc,cropperFileE)
 
     var image = document.getElementById('croppings-img');
     var cropper = new Cropper(image, {
-        aspectRatio: w / h,
-        viewMode: 2,
+        aspectRatio: 1,
+        viewMode: 0,
     });
 }
 
