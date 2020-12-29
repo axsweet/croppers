@@ -152,7 +152,7 @@ function fillImgAndInput(id, base64url) {
         if (base64url)
             $('#cropper-img1').attr('src', base64url);
         else
-            $('#cropper-img1').removeAttr('src');
+        $('#cropper-img1').removeAttr('src');
         $('#cropper-input1').val(base64url);
     }else if (id == 2) {
         if (base64url)
@@ -160,12 +160,48 @@ function fillImgAndInput(id, base64url) {
         else
             $('#cropper-img2').removeAttr('src');
         $('#cropper-input2').val(base64url);
-    } else {
+    }else if (id == 3) {
         if (base64url)
             $('#cropper-img3').attr('src', base64url);
         else
             $('#cropper-img3').removeAttr('src');
-        $('#cropper-input3').val(base64url);
+        $('#cropper-input3').val(base64url);    
+    }else if (id == 4) {
+        if (base64url)
+            $('#cropper-img4').attr('src', base64url);
+        else
+            $('#cropper-img4').removeAttr('src');
+        $('#cropper-input4').val(base64url);    
+    }else if (id == 5) {
+        if (base64url)
+            $('#cropper-img5').attr('src', base64url);
+        else
+            $('#cropper-img5').removeAttr('src');
+        $('#cropper-input5').val(base64url);        
+    }else if (id == 6) {
+        if (base64url)
+            $('#cropper-img6').attr('src', base64url);
+        else
+            $('#cropper-img6').removeAttr('src');
+        $('#cropper-input6').val(base64url);            
+    }else if (id == 7) {
+        if (base64url)
+            $('#cropper-img7').attr('src', base64url);
+        else
+            $('#cropper-img7').removeAttr('src');
+        $('#cropper-input7').val(base64url);            
+    }else if (id == 8) {
+        if (base64url)
+            $('#cropper-img8').attr('src', base64url);
+        else
+            $('#cropper-img8').removeAttr('src');
+        $('#cropper-input8').val(base64url);          
+    }else  {
+        if (base64url)
+            $('#cropper-img9').attr('src', base64url);
+        else
+            $('#cropper-img9').removeAttr('src');
+        $('#cropper-input9').val(base64url);
     }
 }
 
@@ -241,6 +277,18 @@ $('form div').on('click','.cropper-btn',function(){
         $('#cropper-file2').click();
     if ($(this).attr('id') == 'cropper-btn3')
         $('#cropper-file3').click();
+    if ($(this).attr('id') == 'cropper-btn4')
+        $('#cropper-file4').click();
+    if ($(this).attr('id') == 'cropper-btn5')
+        $('#cropper-file5').click();
+    if ($(this).attr('id') == 'cropper-btn6')
+        $('#cropper-file6').click();
+    if ($(this).attr('id') == 'cropper-btn7')
+        $('#cropper-file7').click();
+    if ($(this).attr('id') == 'cropper-btn8')
+        $('#cropper-file8').click();
+    if ($(this).attr('id') == 'cropper-btn9')
+        $('#cropper-file9').click();        
     return false;
 });
 
