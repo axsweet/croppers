@@ -198,7 +198,7 @@ function croppers(imgSrc,cropperFileE)
                 width: w,
                 height: h,
                      center: true,
-            fillColor: '#FFFFFF'1
+            fillColor: '#FFFFFF'
             });
             //剪裁数据转换base64
             var base64url = cas.toDataURL(getMIME(imgSrc));
