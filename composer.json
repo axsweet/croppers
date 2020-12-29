@@ -1,5 +1,5 @@
 {
-    "name": "laravel-hfm-ext/croppers",
+    "name": "laravel-admin-ext/croppers",
     "description": "description...",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
